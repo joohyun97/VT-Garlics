@@ -1,6 +1,6 @@
 import streamlit as st
 # from moviepy.editor import 
-import Backup.video_converter as vc
+import video_converter as vc
 
 def video_uploader():
     # converting from video extension to .wav
