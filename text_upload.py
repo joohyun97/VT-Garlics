@@ -2,9 +2,6 @@ import streamlit as st
 import text_analysis as ta
 import audio_converter as voice
 
-with open('style.css') as style:
-    st.markdown(f"<style>{style.read()}</style>", unsafe_allow_html=True)
-
 #Header Section
 with st.container():
     st.title("GuardianTales")
