@@ -8,7 +8,7 @@ def audio_output(title, text):
     # https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt
     
     #  https://stackoverflow.com/questions/72147776/how-to-integrate-azure-text-to-speech-with-streamlit
-    speech_config = acs.SpeechConfig(subscription="9b1677e9472e4b1c8f6b235b8b1d9bf2", region="eastus")
+    speech_config = acs.SpeechConfig(subscription="", region="eastus")
     speech_config.speech_synthesis_voice_name='en-US-JasonNeural'
     audio_config = acs.audio.AudioOutputConfig(use_default_speaker=True, filename=wav_file)
 
