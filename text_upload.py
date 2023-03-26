@@ -15,7 +15,8 @@ def text_uploader():
     elif upload_bt:
         st.write("Upload Text")
         
-    # st.write('Sentiment:', sentiment_score)
+   
+    
         
 def check_textprompt(prompt):
     return prompt != '' or prompt != 'Enter the text to read'
