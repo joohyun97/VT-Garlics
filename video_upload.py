@@ -1,6 +1,7 @@
 import streamlit as st
 # from moviepy.editor import 
 import video_converter as vc
+import os.path
 
 def video_uploader():
     # converting from video extension to .wav
@@ -12,11 +13,12 @@ def video_uploader():
             upload_voice = st.button(label='Upload Voice')
             
             if upload_voice:
-                path_to_file = 'resources/video/'
+                # path_to_file = 'resources/video/'
+                path_to_file = ''
                 file_name = f'{path_to_file}{video_file.name}'
                 with open(file_name, 'wb') as f:
                     f.write(video_file.getbuffer())
-                    f.close()
+                
                     
                     
             # extract the video to a wav file

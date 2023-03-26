@@ -3,7 +3,8 @@ import azure.cognitiveservices.speech as acs
 
 
 def audio_output(title, text):
-    wav_file = f"resources/tales/{title}.wav"
+    # wav_file = f"resources/tales/{title}.wav"
+    wav_file = f"{title}.wav"
     # can find diff langs here:
     # https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt
     

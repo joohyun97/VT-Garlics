@@ -6,7 +6,8 @@ import os
 def video_to_wav(path_to_input, input_vid):
 # set the path to the input MP4 file and output WAV file
     name, ext = os.path.splitext(input_vid)
-    output_audio = f'resources/video_to_wav/{name}.wav'
+    output_audio = f'{name}.wav'
+    # output_audio = f'resources/video_to_wav/{name}.wav'
     input_video = f'{path_to_input}{input_vid}'
 
     # use FFmpeg to convert MP4 to WAV
